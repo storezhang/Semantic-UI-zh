@@ -1,0 +1,327 @@
+﻿---
+layout      : 'default'
+css         : 'module'
+
+title       : '模块'
+description : '模块定义了一组常用基础 行为的组件。'
+type        : 'Semantic'
+---
+
+<%- @partial('header', { tabs: { overview: '概述', init: '使用', behavior: '事件', settings: '配置'} }) %>
+
+<div class="main container">
+
+    <div class="ui tab" data-tab="overview">
+
+        <p>所有的正式模块都使用单一的设计模式设计。该允许一些有用的功能适用于所有的JavaScript组件。</p>
+        <div class="ui relaxed list">
+            <div class="item">
+                <i class="check icon"></i>
+                <div class="content">
+                    <div class="header">运行时性能分析</div>
+                    <p>所有的模块都提供了运行时分析性能日志的能力，这使得你可以通过调试窗口看到模块初始化的总时间。<code>onDomReady</code></p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="check icon"></i>
+                <div class="content">
+                    <div class="header">人性化的可读跟踪日志</div>
+                    <p>不像其它Javascript前端组件库那样只能通过看程序代码来了解程序的意图，Semantic UI为每一个组件都提供了运行时的调试日志输出，这使得你可以很容易的了解到程序现在在做什么。</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="check icon"></i>
+                <div class="content">
+                    <div class="header">可以通过各种方式来改变模块的配置，由其是在模块初始化完成后修改其配置</div>
+                    <p>Semantic UI提供了各种修改模块配置的方式，包括初始化时，初始化后以及配置模块的默认参数等。</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="check icon"></i>
+                <div class="content">
+                    <div class="header">所有的模块都提供了初始化方法和销毁方法</div>
+                    <p>所有的模块都可以设置销毁/初始化方法回调，并且一个模块可以被多次初始化。</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="check icon"></i>
+                <div class="content">
+                    <div class="header">元数据包含了实例</div>
+                    <p>模块元数据中包含了模块实例的意思就是说你可以直接通过修改模块的属性达到修改模块实例UI的目的。</p>
+                </div>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <a href="/spec/docs/modal.commented.html" class="ui large secondary labeled icon button">
+            <i class="info icon"></i>
+            去看看例子：Real World Commented
+        </a>
+        <a href="/spec/docs/module.commented.html" class="ui large black labeled icon button">
+            <i class="info icon"></i>
+            去看看评论的设计模式
+        </a>
+    </div>
+    <div class="ui tab" data-tab="init">
+        <h3 class="ui header">概述</h3>
+        <p>Semantic不会在页面加载时自动为你加入任何事件。你必须在Javascript脚本里面手动加载你想加载的模块。</p>
+        <div class="ui info message">可以多次初始化一个模块，旧的模块会在重新初始化的时候销毁掉。</div>
+        <h3 class="ui header">初始化的例子</h3>
+        <p>下面的例子向你展现了怎样使用Semantic初始化一个模块。</p>
+        <div class="code" data-type="html" data-preview="true">
+            <div class="ui medium image">
+                <div class="ui corner label">
+                    <i class="help link icon" data-content="This appears to the right"></i>
+                </div>
+                <img src="/images/demo/photo.jpg" data-content="This appears in the default location">
+            </div>
+        </div>
+        <div class="evaluated code" data-type="javascript">
+            // just initializing
+            $('.ui.image img')
+            .popup()
+            ;
+        </div>
+        <div class="evaluated code" data-type="javascript">
+            // initializing with settings
+            $('.ui.image .help')
+            .popup({
+            position: 'right center'
+            })
+            ;
+        </div>
+    </div>
+    <div class="ui tab" data-tab="behavior">
+        <div class="fixed column">
+            <div class="content">
+                <h3 class="ui header">小例子</h3>
+                <i class="demo circular help link icon" data-content="弹出框 #1"></i>
+                <i class="demo circular help link icon" data-content="弹出框 #2"></i>
+                <div class="ui raised segment">
+                    <div class="ui top attached label">控制台</div>
+                    <pre class="console"></pre>
+                </div>
+            </div>
+        </div>
+        <div class="examples">
+            <h2 class="ui dividing header">使用模块事件</h2>
+            <p>模块事件其实就是模块暴露出来的API，可以使用这些事件来配置模块参数或者返回这些事件来返回该模块的状态。</p>
+            <p>事件方法可以使用两种方式来调用，一种是两个单词连接在一起，另一种是单词之间分开描写，因此<b>spaced words</b>和<b>spacedWords</b>都可以正确的调用该事件方法。</p>
+
+            <p>事件方法可以使用下面两种语法来调用：</p>
+            <div class="code">
+                // both are the same
+                $('.your.element')
+                .module('behavior name', argumentOne, argumentTwo)
+                .module('behaviorName', argumentOne, argumentTwo)
+                ;
+            </div>
+
+            <h3 class="ui header">通用事件</h3>
+            <p>所有的模块都可以使用通用事件哦！</p>
+            <table class="ui celled definition sortable table segment">
+                <thead>
+                <th>名字</th>
+                <th>用法</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>initialize</td>
+                        <td>初始化组件，添加事件处理方法以及初始化数据。</td>
+                    </tr>
+                    <tr>
+                        <td>destroy</td>
+                        <td>删除页面由初始化所做的所有更改。</td>
+                    </tr>
+                    <tr>
+                        <td>refresh</td>
+                        <td>刷新缓存数据。</td>
+                    </tr>
+                    <tr>
+                        <td>setting(setting, value)</td>
+                        <td>修改或者读取组件的配置参数。</td>
+                    </tr>
+                    <tr>
+                        <td>invoke(query, passedArguments, instance)</td>
+                        <td>Internal method used for translating sentence case method into an internal method</td>
+                    </tr>
+                    <tr>
+                        <td>debug(comment, values)</td>
+                        <td>显示调试日志（当用户配置日志生效后）。</td>
+                    </tr>
+                    <tr>
+                        <td>verbose(comment, values)</td>
+                        <td>显示运行日志（当用户配置日志生效后）。</td>
+                    </tr>
+                    <tr>
+                        <td>error(name)</td>
+                        <td>显示全称为name的错误消息。</td>
+                    </tr>
+                    <tr>
+                        <td>performance log(comment, value)</td>
+                        <td>给组件添加性能跟踪日志。</td>
+                    </tr>
+                    <tr>
+                        <td>performance display</td>
+                        <td>显示当时组件的性能。</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="ui dividing header">例子</h2>
+
+            <h3 class="ui header">重写组件内部方法</h3>
+            <p>模块的内部方法可以在运行时重写该方法的具体实现。</p>
+
+            <div class="evaluated code">
+                // initialize both popups inline
+                $('.demo.icon')
+                .popup({
+                inline: true
+                })
+                ;
+                //output the first popup's logs to the page
+                $('.demo.icon').first()
+                .popup('internal', 'debug', function() {
+                $('.console')
+                .append(arguments[0] + "\n")
+                // scroll to bottom
+                .prop('scrollTop', $('.console').prop('scrollHeight') )
+                ;
+                })
+                ;
+            </div>
+
+            <h3 class="ui header">触发事件</h3>
+            <p>有引起事件可以接受参数，例如弹出框的<b>show</b> 事件可以接受一个回调方法。 下面的例子将向你展示一个弹出框显示后通过程序改变它的位置。</p>
+            <div class="code" data-demo="true">
+                // Sets a popup to top left position with an offset of negative five
+                $('.demo.icon').first()
+                .popup('setting', 'position', 'top right')
+                .popup('show', function() {
+                $(this)
+                .popup('set position', 'right center')
+                ;
+                })
+                ;
+            </div>
+            <h3 class="ui header">返回值</h3>
+            <p>事件方法可以返回模块的内部状态，比如说弹出框组件有一个叫 <code>isvisible</code> 的方法可以返回弹出框当前是否被显示在浏览器窗口中。</p>
+            <div class="code" data-demo="true">
+                // returns boolean value instead of jQuery chain
+                $('.demo.icon')
+                .popup('debug', $('.demo.icon').first().popup('is visible') )
+                ;
+            </div>
+            <div class="code" data-demo="true">
+                // if selector size > 1 returns array of values [boolean, boolean...]
+                $('.demo.icon')
+                .popup('debug', $('.demo.icon').popup('is visible') )
+                ;
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui tab" data-tab="settings">
+
+        <p>不像其它的Javascript组件，Semantic不需要像Bootstrap那样使用HTML属性来配置模块，你可以使用各种其它方法来配置模块，比如配置默认参数、在初始化的时候以及在初始化之后对模块进行配置。</p>
+
+        <h3 class="ui header">通用配置</h3>
+        <p>下面的通用配置列表中的配置在Semantic的模块里都可以使用。
+        <table class="ui celled sortable definition table segment">
+            <thead>
+            <th>名称</th>
+            <th>用法</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>name</td>
+                    <td>name用于区分各个模块在调试的时候的输出信息。</td>
+                </tr>
+                <tr>
+                    <td>debug</td>
+                    <td>用于配置是否可以使用调试功能。</td>
+                </tr>
+                <tr>
+                    <td>performance</td>
+                    <td>用于配置是否可以使用性能调试日志。</td>
+                </tr>
+                <tr>
+                    <td>verbose</td>
+                    <td>配置是否在调试控制台输出额外的调试信息。</td>
+                </tr>
+                <tr>
+                    <td>namespace</td>
+                    <td>Namespace used for DOM event and metadata namespacing. Allows module's destroy method to not affect other modules.</td>
+                </tr>
+                <tr>
+                    <td>metadata</td>
+                    <td>An object containing any metadata attributes used.</td>
+                </tr>
+                <tr>
+                    <td>selectors</td>
+                    <td>An object containing all selectors used in the module, these are usually children of the module.</td>
+                </tr>
+                <tr>
+                    <td>classNames</td>
+                    <td>An object containing all class names used in the module.</td>
+                </tr>
+                <tr>
+                    <td>errors</td>
+                    <td colspan="2">A javascript array of error statements used in the plugin. These may sometimes appear to the user, but most often appear in debug statements.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="ui header">修改配置</h3>
+        <p>下面的例子使用popup模块来演示如何 <a href="/modules/popup.html">popup</a> 改变默认的配置。</p>
+        <div class="ui ordered very relaxed list">
+            <div class="item">
+                <div class="header">配置模块的默认设置</div>
+                模块的默认设置可以使用 <b>$.fn.module.settings</b>来设置。
+                <br>
+                <div class="code">
+                    $.fn.popup.settings.moduleName = 'Godzilla';
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">在初始化时修改配置</div>
+                可以在模块初始化的时候修改模块的配置。
+                <br>
+                <div class="code">
+                    $('.foo')
+                    .popup({
+                    moduleName : 'Godzilla',
+                    verbose    : true
+                    })
+                    ;
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">在初始化后修改模块配置</div>
+                模块可以在初始化完成后调用'settings'方法来修改配置，'settings'方法接受一个明确了配置名和配置参数的一个映射对象，如果下面的例子所示。
+                <br>
+                <div class="code">
+                    $('.foo')
+                    // lets initialize that!
+                    .popup()
+                    // oh wait forgot something
+                    .popup('setting', 'moduleName', 'Godzilla')
+                    // and some more things
+                    .popup('setting', {
+                    debug   : true,
+                    verbose : true
+                    })
+                    ;
+                </div>
+            </div>
+        </div>
+        <h3 class="ui header">读取模块配置参数</h3>
+        <p>可以通过程序实现对模块配置参数的读取：
+        <div class="code">
+            // outputs 'godzilla' (1) or ['godzilla', 'godzilla'...] (2 or more)
+            $('.foo').popup('setting', 'moduleName');
+        </div>
+    </div>
+</div>

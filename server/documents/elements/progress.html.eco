@@ -1,0 +1,122 @@
+---
+layout      : 'default'
+css         : 'progress'
+title       : '进度条控件'
+description : '进度条控件主要显示任务的当前进度（已完成的进度比率）。'
+type        : 'UI Element'
+---
+
+<%- @partial('header') %>
+
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">进度条种类</a>
+            <a class="item">进度条状态</a>
+            <a class="item">变化的进度条</a>
+        </div>
+    </div>
+    <h2 class="ui dividing header">进度条种类</h2>
+
+    <div class="example">
+        <h4 class="ui header">进度条</h4>
+        <p>标准进度条。</p>
+        <div class="ui progress">
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">进度条状态</h2>
+
+    <div class="example">
+        <h4 class="ui header">激活</h4>
+        <p>激活的进度条将被显示在网页中。</p>
+        <div class="ui active progress">
+            <div class="bar"></div>
+        </div>
+    </div>
+
+
+    <div class="example">
+        <h4 class="ui header">完成</h4>
+        <p>进度条可以显示任务已经完成。</p>
+        <div class="ui successful progress">
+            <div class="bar" style="width:100%"></div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">错误</h4>
+        <p>进度条可以显示任务出错啦。</p>
+        <div class="ui failed progress">
+            <div class="bar" style="width:100%"></div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">禁用</h4>
+        <p>被禁用的进度条（显示在网页中，但不会有动画也不能响应操作）。</p>
+        <div class="ui disabled progress">
+            <div class="bar" style="width:100%"></div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">变化的进度条</h2>
+
+
+    <div class="example">
+        <h4 class="ui header">附加进度条</h4>
+        <p>进度条可以包含其它控件。</p>
+        <div class="ui top attached progress">
+            <div class="bar"></div>
+        </div>
+        <div class="ui attached segment">
+            <p>加载中...</p>
+        </div>
+        <div class="ui bottom attached progress">
+            <div class="bar"></div>
+        </div>
+    </div>
+
+
+    <div class="example">
+        <h4 class="ui header">颜色</h4>
+        <p>进度条可以有不同的颜色：</p>
+        <div class="ui blue progress">
+            <div class="bar"></div>
+        </div>
+        <div class="ui black progress">
+            <div class="bar"></div>
+        </div>
+        <div class="ui green progress">
+            <div class="bar"></div>
+        </div>
+        <div class="ui red progress">
+            <div class="bar"></div>
+        </div>
+        <div class="ui blue progress">
+            <div class="bar"></div>
+        </div>
+        <div class="ui purple progress">
+            <div class="bar"></div>
+        </div>
+        <div class="ui teal progress">
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">条纹样式</h4>
+        <p>进度条有它特有的条纹样式（好像最先是由Mac OS弄出来的，现在基本上的操作系统，前端框架等都这德性，包括Bootstrap和Semantic UI）。</p>
+        <div class="ui striped progress">
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui active striped progress">
+            <div class="bar" style="width: 30%;"></div>
+        </div>
+    </div>
+
+</div>

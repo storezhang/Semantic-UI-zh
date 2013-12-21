@@ -1,0 +1,263 @@
+---
+layout      : 'default'
+css         : 'feed'
+
+title       : 'Feed'
+description : '按时间顺序呈现用户输入活动。'
+type        : 'UI View'
+---
+
+<%- @partial('header') %>
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">种类</a>
+            <a class="item">内容</a>
+            <a class="item">变化的Feed</a>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">种类</h2>
+
+    <div class="example">
+        <h4>Feed</h4>
+        <p>标准的Feed包含了一些可选的元素。</p>
+        <div class="ui piled feed segment">
+            <h2 class="ui header">
+                爱酷学习网的当前活动
+            </h2>
+            <div class="event">
+                <div class="label">
+                    <img src="/images/demo/avatar2.jpg">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        一个月前
+                    </div>
+                    <div class="summary">
+                        <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>正式上线！
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="label">
+                    <i class="circular pencil icon"></i>
+                </div>
+                <div class="content">
+                    <div class="date">
+                        3天前
+                    </div>
+                    <div class="summary">
+                        上传了一个ExtJS的视频教程。
+                    </div>
+                    <div class="extra text">
+                        该视频教程主要讲述了ExtJS的核心模块。
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="label">
+                    <i class="circular photo icon"></i>
+                </div>
+                <div class="content">
+                    <div class="date">
+                        3天前
+                    </div>
+                    <div class="summary">
+                        <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>加入<a>视频教程订阅</a>功能。
+                    </div>
+                    <div class="extra images">
+                        <img src="/images/demo/item1.jpg">
+                        <img src="/images/demo/item2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">内容</h2>
+
+    <div class="example">
+        <h4>标签</h4>
+        <p>Feed事件可以包含一个标签。</p>
+        <div class="ignored ui info message">在Semantic UI中，包含一个标签就是将其格式化成一个包含一个图标或者图片的元素。</div>
+        <div class="ui feed segment">
+            <div class="event">
+                <div class="label">
+                    <img src="/images/demo/avatar.jpg">
+                </div>
+                <div class="content">
+                    <div class="summary">
+                        <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>正式上线！
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="label">
+                    <i class="circular pencil icon"></i>
+                </div>
+                <div class="content">
+                    <div class="summary">
+                        爱酷学习网新增视频教程订阅功能。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4>日期</h4>
+        <p>Feed事件可以包含日期（时间）。</p>
+        <div class="ui feed segment">
+            <div class="event">
+                <div class="label">
+                    <img src="/images/demo/avatar.jpg">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        3天前
+                    </div>
+                    <div class="summary">
+                        <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>正式上线！
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4>附加信息</h4>
+        <p>Feed事件可以添加其它附加信息（比如说图片等）。</p>
+        <div class="ui feed segment">
+            <div class="event">
+                <div class="label">
+                    <img src="/images/demo/avatar.jpg">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        3天前
+                    </div>
+                    <div class="summary">
+                        <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>正式上线！
+                    </div>
+                    <div class="extra images">
+                        <img src="/images/demo/item1.jpg">
+                        <img src="/images/demo/item2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="label">
+                    <img src="/images/demo/avatar.jpg">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        3天前
+                    </div>
+                    <div class="summary">
+                        <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>新增订阅功能。
+                    </div>
+                    <div class="extra text">
+                        爱酷学习网加入最新评论功能。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="ui dividing header">变化的Feed</h2>
+    <div class="example">
+        <h4 class="ui header">尺寸（大小）</h4>
+        <p>Feed控件可以有不同的尺寸。</p>
+
+        <div class="ui grid">
+            <div class="ten wide column">
+                <div class="ui small piled feed segment">
+                    <h4 class="ui header">我的活动</h4>
+                    <div class="event">
+                        <div class="label">
+                            <img src="/images/demo/avatar2.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="date">
+                                一个月前
+                            </div>
+                            <div class="summary">
+                                为<a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>增加视频教程订阅功能。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="label">
+                            <i class="circular pencil icon"></i>
+                        </div>
+                        <div class="content">
+                            <div class="date">
+                                3天前
+                            </div>
+                            <div class="summary">
+                                为爱酷学习网增加最新评论功能。
+                            </div>
+                            <div class="extra text">
+                                为爱酷学习网设计Logo。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="label">
+                            <i class="circular photo icon"></i>
+                        </div>
+                        <div class="content">
+                            <div class="date">
+                                3天前
+                            </div>
+                            <div class="summary">
+                                <a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>新增<a>视频教程订阅</a>功能。
+                            </div>
+                            <div class="extra images">
+                                <img src="/images/demo/item1.jpg">
+                                <img src="/images/demo/item2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="six wide column">
+                <div class="ui small   feed segment">
+                    <h4 class="ui header">关注者活动</h4>
+                    <div class="event">
+                        <div class="content">
+                            <div class="summary">
+                                为<a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>上传<a>Bootstrap</a>视频教程。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="content">
+                            <div class="summary">
+                                为<a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>上传<a>ExtJS</a>视频教程。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="content">
+                            <div class="summary">
+                                为<a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>上传<a>Java</a>视频教程。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="content">
+                            <div class="summary">
+                                为<a href="http://www.icoolxue.com" target="_blank">爱酷学习网</a>上传<a>Python</a>视频教程。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

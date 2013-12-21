@@ -1,0 +1,92 @@
+﻿---
+layout      : 'default'
+css         : 'breadcrumb'
+title       : '面包屑/导航条'
+description : '面包屑/导航条是一个显示当前页面和其它页面之间的相对路径（关系）的菜单条。'
+type        : 'UI Collection'
+---
+
+<%- @partial('header') %>
+
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">种类</a>
+            <a class="item">元素</a>
+            <a class="item">千变万化</a>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">种类</h2>
+
+    <div class="example">
+        <h4 class="ui header">简单的面包屑/导航条</h4>
+        <div class="ui breadcrumb">
+            <a class="section">食物</a>
+            <div class="divider"> / </div>
+            <a class="section">水果</a>
+            <div class="divider"> / </div>
+            <div class="active section">苹果</div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">元素</h2>
+
+    <div class="example">
+        <h4 class="ui header">分隔条</h4>
+        <p>面包屑/导航条可以使用分隔条（可以使用图标或者文本）来分隔开来各个元素。</p>
+        <div class="ui breadcrumb">
+            <a class="section">食物</a>
+            <i class="right arrow icon divider"></i>
+            <a class="section">水果</a>
+            <i class="right arrow icon divider"></i>
+            <div class="active section">苹果</div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">分隔区域</h4>
+        <p>面包屑/导航条可以包含多个用于分隔各个元素的分隔区域，这些分隔区域可以是文本或者链接。</p>
+        <div class="ui breadcrumb">
+            <a class="section">食物</a>
+            <div class="divider"> / </div>
+            <a class="section">水果</a>
+            <div class="divider"> / </div>
+            <div class="active section">苹果</div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">变化的面包屑/导航条</h2>
+
+    <div class="example">
+        <h4 class="ui header">大小</h4>
+        <p>各种大小的面包屑/导航条</p>
+        <div class="ui small breadcrumb">
+            <a class="section">食物</a>
+            <div class="divider"> / </div>
+            <a class="section">水果</a>
+            <div class="divider"> / </div>
+            <div class="active section">苹果</div>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui large breadcrumb">
+            <a class="section">食物</a>
+            <div class="divider"> / </div>
+            <a class="section">水果</a>
+            <div class="divider"> / </div>
+            <div class="active section">苹果</div>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui huge breadcrumb">
+            <a class="section">食物</a>
+            <div class="divider"> / </div>
+            <a class="section">水果</a>
+            <div class="divider"> / </div>
+            <div class="active section">苹果</div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,166 @@
+---
+layout      : 'default'
+css         : 'input'
+title       : '输入控件'
+description : '输入控件就是允许用户输入信息的控件（比如输入用户名、密码等）。'
+type        : 'UI Element'
+---
+
+<%- @partial('header') %>
+
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">输入控件种类</a>
+            <a class="item">输入控件状态</a>
+            <a class="item">变化的输入控件</a>
+        </div>
+    </div>
+    <h2 class="ui dividing header">输入控件种类</h2>
+
+    <div class="example">
+        <h4 class="ui header">输入控件</h4>
+        <p>标准输入控件</p>
+        <div class="ui input">
+            <input type="text" placeholder="搜索...">
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">输入控件状态</h2>
+
+    <div class="example">
+        <h4 class="ui header">焦点</h4>
+        <p>可以告知用户他正在输入。</p>
+        <div class="ui input focus">
+            <input type="text" placeholder="查询...">
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">加载状态</h4>
+        <p>可以在必要的时候显示一个加载控件。</p>
+        <div class="ui icon input loading">
+            <input type="text" placeholder="查询...">
+            <i class="icon"></i>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">错误</h4>
+        <p>可以告知用户他输入的数据有误。</p>
+        <div class="ui input error" placeholder="Search...">
+            <input type="text">
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">变化的输入控件</h2>
+
+    <div class="example">
+        <h4 class="ui header">图标</h4>
+        <p>输入控件可以带有图标</p>
+        <div class="ui icon input">
+            <input type="text" placeholder="查询...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui left icon input">
+            <input type="text" placeholder="搜索用户...">
+            <i class="users icon"></i>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui icon input">
+            <input type="text" placeholder="查询...">
+            <i class="circular search icon"></i>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui icon input">
+            <input type="text" placeholder="查询...">
+            <i class="inverted search icon"></i>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">标签化</h4>
+        <p>输入控件可以带有标签。</p>
+        <div class="ui labeled input">
+            <input type="text" placeholder="查询...">
+            <div class="ui corner label">
+                <i class="asterisk icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">动作/行为</h4>
+        <p>输入控件可以告知用户输入数据的作用。</p>
+        <div class="ui action input">
+            <input type="text" placeholder="查询...">
+            <div class="ui button">查询</div>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui action input">
+            <input type="text" value="http://www.icoolxue.com">
+            <div class="ui teal right labeled icon button"><i class="copy icon"></i> 复制</div>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui action input">
+            <input type="text" placeholder="查询...">
+            <div class="ui icon button"><i class="search icon"></i></div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">流式输入控件</h4>
+        <p>流式输入控件可以占用所有的父控件的空间（基本上的Semantic UI控件都有相对应的流式控件，用户一致，效果也一致）。</p>
+        <div class="ui fluid icon input">
+            <input type="text" placeholder="流式输入控件...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">输入控件尺寸</h4>
+        <p>输入控件也有不同的尺寸。</p>
+        <div class="ui mini icon input">
+            <input type="text" placeholder="迷你输入控件...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui small icon input">
+            <input type="text" placeholder="小型输入控件...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui large icon input">
+            <input type="text" placeholder="普通输入控件...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui big icon input">
+            <input type="text" placeholder="大型输入控件...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui huge icon input">
+            <input type="text" placeholder="超大型输入控件...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui massive icon input">
+            <input type="text" placeholder="最大型输入控件...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+
+</div>

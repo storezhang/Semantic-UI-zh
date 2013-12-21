@@ -1,0 +1,390 @@
+---
+layout      : 'default'
+css         : "label"
+title       : '标签'
+description : '标签是对内容的精简描述。'
+type        : 'UI Element'
+---
+
+<%- @partial('header') %>
+
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">标签种类</a>
+            <a class="item">变化的标签</a>
+            <a class="item">标签组</a>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">标签种类</h2>
+
+    <div class="example">
+        <h4 class="ui header">标签</h4>
+        <p>基础标签</p>
+        <div class="ui label">
+            <i class="mail icon"></i> 23
+        </div>
+    </div>
+    <div class="example">
+        <h4 class="ui header">详细标签</h4>
+        <p>标签可以包含详细信息（最好是简短一些的信息）。</p>
+        <div class="ui label">
+            爱酷学习网的视频教程类目
+            <div class="detail">1558</div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">可删除的标签</h4>
+        <p>这种标签可以显示一个删除图标。</p>
+        <div class="ui label">
+            计算机类视频教程
+            <i class="delete icon"></i>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">链接标签</h4>
+        <p>此种标签可以显示为一个链接。</p>
+        <div class="ui label">
+            我的视频教程
+            <a class="detail"><i class="mail icon"></i> 23</a>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">图片标签</h4>
+        <p>此类标签包含一个图片。</p>
+        <a class="ui image label">
+            <img src="/images/demo/photo2.jpg">
+            dog@doggington.com
+            <i class="delete icon"></i>
+        </a>
+        <a class="ui image label">
+            <img src="/images/demo/avatar2.jpg">
+            james@thepooch.com
+            <i class="delete icon"></i>
+        </a>
+        <a class="ui image label">
+            <img src="/images/demo/avatar3.jpg">
+            kelly@bellyscratcher.com
+            <i class="delete icon"></i>
+        </a>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">边角标签</h4>
+        <p>这种标签是在控件或者网页元素的边角上显示的标签。</p>
+        <div class="yellow ui message">边角标签必须在容器内使用position: relative才能正确显示。</div>
+        <div class="ui segment">
+            <div class="ui right red corner label">
+                <i class="heart icon"></i>
+            </div>
+            <div class="ui left corner label">
+                <div class="text">新</div>
+            </div>
+            这是一个新上传的视频教程。
+        </div>
+        <div class="ui left floated medium image">
+            <a class="ui left corner label">
+                <div class="text">新</div>
+            </a>
+            <img src="/images/demo/highres2.jpg">
+        </div>
+        <div class="ui left floated medium image">
+            <a class="ui right red corner label">
+                <i class="heart icon"></i>
+            </a>
+            <img src="/images/demo/highres3.jpg">
+        </div>
+    </div>
+
+    <div class="clearing example">
+        <h4 class="ui header">飘带标签</h4>
+        <p>这种标签可以附加到元素上的一个飘带。</p>
+        <div class="ui two column grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui raised segment">
+                        <div class="ui ribbon label">计算机</div>
+                        <p>计算机类视频教程。</p>
+                        <div class="ui teal ribbon label">历史</div>
+                        <p>历史类视频教程。</p>
+                        <div class="ui red ribbon label">体育</div>
+                        <p>体育类视频教务。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="existing code">
+            <div class="ui ribbon label">视频教程</div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">附加标签</h4>
+        <p>这种标签附加在内容之上。</p>
+        <div class="ui three column grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui segment">
+                        <div class="ui top attached label">HTML</div>
+                        <p>这是HTML内容。</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">
+                        <div class="ui bottom attached label">CSS</div>
+                        <p>这是CSS内容。</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">
+                        <div class="ui top right attached label">代码</div>
+                        <p>这是代码。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui segment">
+                        <div class="ui top left attached label">视图</div>
+                        <p>这是视图。</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">
+                        <div class="ui bottom left attached label">用户视图</div>
+                        <p>这是用户视图。</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">
+                        <div class="ui bottom right attached label">管理员视图</div>
+                        <p>这是管理员视图。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="existing code">
+            <div class="ui top attached label">HTML</div>
+            <div class="ui bottom attached label">CSS</div>
+            <div class="ui top right attached label">代码</div>
+            <div class="ui top left attached label">视图</div>
+            <div class="ui bottom left attached label">用户视图</div>
+            <div class="ui bottom right attached label">管理员视图</div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">变化的标签</h2>
+    <div class="example">
+        <h4 class="ui header">颜色</h4>
+        <p>标签可以有不同的颜色。</p>
+        <a class="ui black label">
+            第一
+        </a>
+        <a class="ui green label">
+            玩笑
+        </a>
+        <a class="ui red label">
+            高兴
+        </a>
+        <a class="ui blue label">
+            聪明
+        </a>
+        <a class="ui orange label">
+            激进
+        </a>
+        <a class="ui purple label">
+            疯子
+        </a>
+        <a class="ui teal label">
+            扣人心弦
+        </a>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">水平标签</h4>
+        <p>按水平方式显示标签和内容。</p>
+        <div class="ui divided selection list">
+            <a class="item">
+                <div class="ui red horizontal label">前端</div>
+                Seamantic UI
+            </a>
+            <a class="item">
+                <div class="ui purple horizontal label">Java</div>
+                SpringMVC
+            </a>
+            <a class="item">
+                <div class="ui red horizontal label">前端</div>
+                Bootstrap
+            </a>
+            <a class="item">
+                <div class="ui horizontal label">Linux</div>
+                Ubuntu
+            </a>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">圆形标签</h4>
+        <p>圆形标签。</p>
+        <a class="ui black circular label">
+            12
+        </a>
+        <a class="ui green circular label">
+            11
+        </a>
+        <a class="ui red circular label">
+            10
+        </a>
+        <a class="ui blue circular label">
+            64
+        </a>
+        <a class="ui purple circular label">
+            62
+        </a>
+        <a class="ui teal circular label">
+            1
+        </a>
+    </div>
+    <div class="another example">
+        <div class="ui black circular label"></div>
+        <div class="ui green circular label"></div>
+        <div class="ui red circular label"></div>
+        <div class="ui blue circular label"></div>
+        <div class="ui purple circular label"></div>
+        <div class="ui teal circular label"></div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">激动标签</h4>
+        <p>浮动于其它元素之上的标签。</p>
+        <div class="ui compact menu">
+            <a class="item">
+                <i class="icon mail"></i> 消息
+                <div class="floating ui red label">22</div>
+            </a>
+            <a class="item">
+                <i class="icon users"></i> 朋友
+                <div class="floating ui teal label">22</div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="example">
+        <h4 class="ui header">指示标签</h4>
+        <p>指示某个元素的作用的标签。</p>
+        <form class="ui fluid form">
+            <div class="field">
+                <input type="text" placeholder="姓">
+                <div class="ui pointing label">
+                    请输入你的姓
+                </div>
+            </div>
+            <div class="ui simple divider"></div>
+            <div class="field" placeholder="名">
+                <div class="ui pointing below label">
+                    请输入你的名字
+                </div>
+                <input type="text">
+            </div>
+            <div class="ui simple divider"></div>
+            <div class="inline field">
+                <input type="text" placeholder="用户名">
+                <div class="ui pointing left label">
+                    必须是邮件地址！
+                </div>
+            </div>
+            <div class="ui simple divider"></div>
+            <div class="inline field">
+                <div class="ui pointing right label">
+                    必须是6-22位字符。
+                </div>
+                <input type="password">
+            </div>
+        </form>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">标签尺寸</h4>
+        <p>标签也可以有不同的尺寸的哦（又是废话了，所有的Semantic UI都有不同的尺寸）。</p>
+        <div class="ui small label">
+            爱酷学习网
+        </div>
+        <br><br>
+        <div class="ui large label">
+            爱酷学习网
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">标签组</h2>
+
+    <div class="example">
+        <h4 class="ui header">标签组尺寸</h4>
+        <p>标签组可以共享空间。</p>
+        <div class="ui large labels">
+            <div class="ui label">
+                玩笑
+            </div>
+            <div class="ui label">
+                高兴
+            </div>
+            <div class="ui label">
+                聪明
+            </div>
+            <div class="ui label">
+                愚蠢
+            </div>
+        </div>
+    </div>
+    <div class="example">
+        <h4 class="ui header">标签组颜色</h4>
+        <p>标签组可以共享颜色。</p>
+        <div class="ui blue labels">
+            <a class="ui label">
+                玩笑 <i class="icon close"></i>
+            </a>
+            <a class="ui label">
+                高兴
+                <div class="detail">22</div>
+            </a>
+            <a class="ui label">
+                聪明
+            </a>
+            <a class="ui label">
+                疯子
+            </a>
+            <a class="ui label">
+                扣人心弦
+            </a>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">圆形标签组</h4>
+        <p>圆形的标签组。</p>
+        <div class="ui circular labels">
+            <a class="ui label">
+                11
+            </a>
+            <a class="ui label">
+                22
+            </a>
+            <a class="ui label">
+                33
+            </a>
+            <a class="ui label">
+                44
+            </a>
+            <a class="ui label">
+                141
+            </a>
+        </div>
+    </div>
+
+</div>

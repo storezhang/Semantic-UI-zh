@@ -1,0 +1,361 @@
+---
+layout      : 'default'
+standalone  : true
+css         : 'item'
+
+title       : 'Item（元素列表）'
+description : '将相关内容组织在一起显示（就像是一个组件一样）。'
+type        : 'UI View'
+---
+
+<%- @partial('header') %>
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">种类</a>
+            <a class="item">变化的Item</a>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">种类</h2>
+
+    <div class="example">
+        <h4 class="ui header">元素列表</h4>
+        <p>基本的元素列表。</p>
+        <div class="ignored yellow ui message">
+            <i class="info icon"></i>
+            元素列表必须手动的设置宽度和高度才能正确的显示。内容也必须被截断，所以每个项目元素不会不超过最大高度。
+        </div>
+        <div class="ui items">
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres.jpg">
+                    <a class="like ui corner label">
+                        <i class="like icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网</div>
+                    <p class="description">免费在线观看高清视频教程的网站。</p>
+                    <div class="extra">
+                        199 喜欢
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres2.jpg">
+                    <a class="like ui corner label">
+                        <i class="like icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="meta">5天前</div>
+                    <div class="name">爱酷学习网Semantic UI视频教程</div>
+                    <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+                    <div class="extra">
+                        311 喜欢
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres3.jpg">
+                    <a class="like ui corner label">
+                        <i class="like icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网Redis视频教程</div>
+                    <p class="description">Redis是一个内存数据库，并且在此基本上增加了很多数据结构，比如List, Set, ZSet等，让你可以更加快速的整合自己的数据。本视频教程以其为基础进行讲解。</p>
+                    <div class="extra">
+                        522 喜欢
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text example">
+        <div class="ui items">
+            <div class="item">
+                <div class="content">
+                    <div class="meta">2天前</div>
+                    <div class="name">爱酷学习网天前Bootstrap视频教程</div>
+                    <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
+                </div>
+                <div class="extra">
+                    199 喜欢
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="meta">5天前</div>
+                    <div class="name">爱酷学习网Semantic UI视频教程</div>
+                    <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+                </div>
+                <div class="extra">
+                    311 喜欢
+                </div>
+            </div>
+            <div class="item">
+                <div class="content">
+                    <div class="meta">1周前</div>
+                    <div class="name">爱酷学习网ExtJS视频教程</div>
+                    <p class="description">ExtJS是一个重量级的前端框架，非常重量级，如果没有特殊需要，不要使用这个框架。ExtJS可以做到完全的Ajax化，但是类库大，学习曲线高，且就算是压缩后的文件大小也非常大，影响它的使用。</p>
+                </div>
+                <div class="extra">
+                    522 喜欢
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="ui dividing header">变化的Item（元素列表）</h2>
+
+    <div class="example">
+        <h4 class="ui header">可堆叠样式式</h4>
+        <div class="ui ignored info message">将你的浏览器窗口大小调小一些就可以看到效果啦。</div>
+        <p>当容器的水平宽度无法显示两个或者多个Item时，这些Item会变成垂直显示以显示全部的Item。</p>
+        <div class="ui stackable items">
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres5.jpg">
+                    <a class="like ui corner label">
+                        <i class="like icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网天前Bootstrap视频教程</div>
+                    <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
+                    <div class="extra">
+                        199 喜欢
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres6.jpg">
+                    <a class="like ui corner label">
+                        <i class="like icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="meta">5天前</div>
+                    <div class="name">爱酷学习网Semantic UI视频教程</div>
+                    <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+                    <div class="extra">
+                        311 喜欢
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">连接式</h4>
+        <p>项目列表可以被自动调整大小以甚至高度。</p>
+        <div class="ignored warning ui message">
+            <i class="info icon"></i>
+            连接的项目列表是无法显示额外的信息。关连排也一样除非你指定了任意列的宽度。
+        </div>
+        <div class="ui connected items">
+            <div class="row">
+                <div class="item">
+                    <div class="image">
+                        <img src="/images/demo/highres4.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">爱酷学习网天前Bootstrap视频教程</div>
+                        <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="/images/demo/highres5.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">爱酷学习网Semantic UI视频教程</div>
+                        <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="/images/demo/highres3.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">爱酷学习网ExtJS视频教程</div>
+                        <p class="description">ExtJS是一个重量级的前端框架，非常重量级，如果没有特殊需要，不要使用这个框架。ExtJS可以做到完全的Ajax化，但是类库大，学习曲线高，且就算是压缩后的文件大小也非常大，影响它的使用。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="another text example">
+        <div class="ui six connected items">
+            <div class="row">
+                <div class="item">
+                    <div class="content">
+                        <div class="name">爱酷学习网天前Bootstrap视频教程</div>
+                        <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="name">爱酷学习网Semantic UI视频教程</div>
+                        <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="name">爱酷学习网ExtJS视频教程</div>
+                        <p class="description">ExtJS是一个重量级的前端框架，非常重量级，如果没有特殊需要，不要使用这个框架。ExtJS可以做到完全的Ajax化，但是类库大，学习曲线高，且就算是压缩后的文件大小也非常大，影响它的使用。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="name">爱酷学习网天前Bootstrap视频教程</div>
+                        <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="name">爱酷学习网Semantic UI视频教程</div>
+                        <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="name">爱酷学习网ExtJS视频教程</div>
+                        <p class="description">ExtJS是一个重量级的前端框架，非常重量级，如果没有特殊需要，不要使用这个框架。ExtJS可以做到完全的Ajax化，但是类库大，学习曲线高，且就算是压缩后的文件大小也非常大，影响它的使用。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="example">
+        <h4 class="ui header">列数</h4>
+        <p>元素列表可以指定显示一行有多少列。</p>
+        <div class="ui four items">
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres4.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网天前Bootstrap视频教程</div>
+                    <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres5.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网Semantic UI视频教程</div>
+                    <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres3.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网ExtJS视频教程</div>
+                    <p class="description">ExtJS是一个重量级的前端框架，非常重量级，如果没有特殊需要，不要使用这个框架。ExtJS可以做到完全的Ajax化，但是类库大，学习曲线高，且就算是压缩后的文件大小也非常大，影响它的使用。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres2.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网MySQL视频教程</div>
+                    <p class="description">MySQL是当前最为流行的开源数据库，优点很多，不一一解释，如果你的项目需要数据库，且又不想为数据库投入额外的资金，对数据库的性能要求又有点高，那么MySQL是你的不二选择。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="another example">
+        <p>连接样式的元素列表每行的列数。</p>
+        <div class="ui five connected items">
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres4.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网天前Bootstrap视频教程</div>
+                    <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres5.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网Semantic UI视频教程</div>
+                    <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres3.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网ExtJS视频教程</div>
+                    <p class="description">ExtJS是一个重量级的前端框架，非常重量级，如果没有特殊需要，不要使用这个框架。ExtJS可以做到完全的Ajax化，但是类库大，学习曲线高，且就算是压缩后的文件大小也非常大，影响它的使用。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres2.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网MySQL视频教程</div>
+                    <p class="description">MySQL是当前最为流行的开源数据库，优点很多，不一一解释，如果你的项目需要数据库，且又不想为数据库投入额外的资金，对数据库的性能要求又有点高，那么MySQL是你的不二选择。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/demo/highres.jpg">
+                    <a class="star ui corner label">
+                        <i class="star icon"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">爱酷学习网Oralce视频教程</div>
+                    <p class="description">Oralce数据库是Oracle公司开发一个商业级数据库，无论是在性能还是售后支持上都无与伦比，当然，价格也是很高的。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

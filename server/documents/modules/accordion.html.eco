@@ -1,0 +1,511 @@
+---
+layout      : 'default'
+css         : 'accordion'
+
+title       : '手风琴模块'
+description : '可折叠的组件，如手风琴式的切换和导航，提供基本和灵活的样式。可以隐藏不需要显示内容。'
+type        : 'UI Module'
+---
+<script src="/javascript/accordion.js"></script>
+
+<%- @partial('header', { tabs: 'module' }) %>
+
+<div class="main container">
+
+    <div class="ui active tab" data-tab="definition">
+
+        <div class="peek">
+            <div class="ui vertical pointing secondary menu">
+                <a class="active item">手风琴模块种类</a>
+                <a class="item">变化的手风琴模块</a>
+            </div>
+        </div>
+
+        <h2 class="ui dividing header">手风琴模块种类</h2>
+        <div class="example">
+            <h4 class="ui header">手风琴模块</h4>
+            <p>标准的手风琴模块。</p>
+            <div class="ui accordion">
+                <div class="active title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网是什么？
+                </div>
+                <div class="active content">
+                    <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网使用了什么技术？
+                </div>
+                <div class="content">
+                    <p>Java, Mybatis, Shiro, SpringMVC, Bootstrap, Semantic UI, jQuery等。</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网比其它网站好在哪？
+                </div>
+                <div class="content">
+                    <p>最大的好在于降低学习成本。</p>
+                    <p>爱酷学习网的绝大部分视频教程都是免费观看的，另外，爱酷学习网的视频教程都是下载的哦。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="example">
+            <h4 class="ui header">基础的手风琴模块</h4>
+            <p>基础的手风琴模块没有添加任何修饰样式。</p>
+            <div class="ui basic accordion">
+                <div class="active title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网是什么？
+                </div>
+                <div class="active content">
+                    <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网使用了什么技术？
+                </div>
+                <div class="content">
+                    <p>Java, Mybatis, Shiro, SpringMVC, Bootstrap, Semantic UI, jQuery等。</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网比其它网站好在哪？
+                </div>
+                <div class="content">
+                    <p>最大的好在于降低学习成本。</p>
+                    <p>爱酷学习网的绝大部分视频教程都是免费观看的，另外，爱酷学习网的视频教程都是下载的哦。</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="ui dividing header">变化的手风琴模块</h2>
+        <div class="example">
+            <h4 class="ui header">流式手风琴模块</h4>
+            <p>又来了一个流式模块（控件），可以占用父容器所有空间。</p>
+            <div class="ui fluid accordion">
+                <div class="active title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网是什么？
+                </div>
+                <div class="active content">
+                    <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网使用了什么技术？
+                </div>
+                <div class="content">
+                    <p>Java, Mybatis, Shiro, SpringMVC, Bootstrap, Semantic UI, jQuery等。</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    爱酷学习网比其它网站好在哪？
+                </div>
+                <div class="content">
+                    <p>最大的好在于降低学习成本。</p>
+                    <p>爱酷学习网的绝大部分视频教程都是免费观看的，另外，爱酷学习网的视频教程都是下载的哦。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ui tab" data-tab="examples">
+
+        <h2 class="ui dividing header">例子</h2>
+
+        <div class="example">
+            <h3 class="ui header">手风琴模块的嵌套</h3>
+            <p>手风琴模块可以有多层嵌套。使用<code>accordion</code>来完嵌套，使用<code>title</code>和<code>content</code>完成嵌套内容。</p>
+            <div class="ui accordion">
+                <div class="active title">
+                    <i class="dropdown icon"></i>
+                    第一层
+                </div>
+                <div class="active content">
+                    <p>这是第一层的内容。</p>
+                    <div class="accordion">
+                        <div class="active title">
+                            <i class="dropdown icon"></i>
+                            第一层（上）
+                        </div>
+                        <div class="active content">
+                            <p>第一层（上）的内容。</p>
+                            <div class="accordion">
+                                <div class="title">
+                                    <i class="dropdown icon"></i>
+                                    第一层（上上）
+                                </div>
+                                <div class="content">
+                                    第一层（上上）的内容。
+                                </div>
+                                <div class="title">
+                                    <i class="dropdown icon"></i>
+                                    第一层（上下）
+                                </div>
+                                <div class="content">
+                                    第一层（上下）的内容。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            第一层（中）
+                        </div>
+                        <div class="content">
+                            第一层（中）的内容。
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            第一层（下）
+                        </div>
+                        <div class="content">
+                            第一层（下）的内容。
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    第二层
+                </div>
+                <div class="content">
+                    <p>第二层的内容。</p>
+                    <div class="active title">
+                        <i class="dropdown icon"></i>
+                        第二层（上）
+                    </div>
+                    <div class="active content">
+                        <p>第二层（上）的内容。</p>
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            第二层（上上）
+                        </div>
+                        <div class="content">
+                            第二层（上）的内容。
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            第二层（上下）
+                        </div>
+                        <div class="content">
+                            第二层（上下）的内容。
+                        </div>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        第二层（中）
+                    </div>
+                    <div class="content">
+                        第二层（中）的内容。
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        第二层（下）
+                    </div>
+                    <div class="content">
+                        第二层（下）的内容。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h3 class="ui header">用在表单中</h3>
+        <p>手风琴模块可以用在任何你需要显示或者隐藏内容的地方，比如说在表单中显示不重要的信息。</p>
+        <div class="ui segment">
+            <div class="ui basic fluid accordion form">
+                <div class="two fields">
+                    <div class="field">
+                        <label>姓</label>
+                        <input placeholder="姓" type="text">
+                    </div>
+                    <div class="field">
+                        <label>名</label>
+                        <input placeholder="名" type="text">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="title">
+                        <i class="icon dropdown"></i>
+                        不重要的细节
+                    </div>
+                    <div class="content field">
+                        <label>辈分</label>
+                        <input placeholder="辈分" type="text">
+                    </div>
+                </div>
+                <div class="ui secondary submit button">注册</div>
+            </div>
+        </div>
+    </div>
+    <div class="example">
+        <h3 class="ui header">用在菜单上</h3>
+        <p>手风琴也可以用在菜单上显示或者隐藏部分菜单。</p>
+        <div class="ui basic vertical accordion menu">
+            <div class="item">
+                <a class="active title">
+                    <i class="dropdown icon"></i>
+                    尺寸
+                </a>
+                <div class="active content menu">
+                    <div class="ui form item">
+                        <div class="grouped inline fields">
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="size" value="small" />
+                                    <label>小</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="size" value="medium" />
+                                    <label>中</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="size" value="large" />
+                                    <label>大</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="size" value="x-large" />
+                                    <label>超大</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a class="active title">
+                    <i class="dropdown icon"></i>
+                    颜色
+                </a>
+                <div class="active content menu">
+                    <div class="ui form item">
+                        <div class="grouped inline fields">
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="small" />
+                                    <label>红</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="medium" />
+                                    <label>橙色</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="large" />
+                                    <label>绿色</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="x-large" />
+                                    <label>蓝色</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui tab" data-tab="usage">
+
+    <h2 class="ui dividing header">初始化</h2>
+    <h3 class="ui header">初始化手风琴模块。</h3>
+    <div class="test code">
+        $('.ui.accordion')
+        .accordion()
+        ;
+    </div>
+
+    <h2 class="ui dividing header">事件</h2>
+
+    <p>可以通过Javascript代码访问的事件：<p>
+    <div class="code">
+        $('.ui.accordion').accordion('behavior', argumentOne, argumentTwo...);
+    </div>
+
+    <table class="ui definition celled table segment">
+        <tr>
+            <td>open (index)</td>
+            <td>展开索引为index的内容。</td>
+        </tr>
+        <tr>
+            <td>close (index)</td>
+            <td>关闭索引为index的内容。</td>
+        </tr>
+        <tr>
+            <td>toggle (index)</td>
+            <td>切换索引为index的内容。</td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="ui tab" data-tab="settings">
+
+    <h3 class="ui header">
+        手风琴模块的配置
+        <div class="sub header">配置可以修改手风琴模块的行为。</div>
+    </h3>
+    <table class="ui sortable celled definition table segment">
+        <thead>
+        <th>配置</th>
+        <th class="four wide">默认值</th>
+        <th>描述</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>exclusive</td>
+                <td>true</td>
+                <td>设置为false将允许多个区别同时展开。</td>
+            </tr>
+            <tr>
+                <td>collapsible</td>
+                <td>true</td>
+                <td>设置为false将会一直有一个区域处于展开状态。</td>
+            </tr>
+            <tr>
+                <td>duration</td>
+                <td>500</td>
+                <td>展开的动画时长。</td>
+            </tr>
+            <tr>
+                <td>easing</td>
+                <td>easeInOutQuint</td>
+                <td>EaseInOutQuint is included with accordion, for additional options consider <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery easing</a>)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="ui header">
+        回调
+        <div class="sub header">手风琴模块的回调方法。</div>
+    </h3>
+
+    <table class="ui sortable celled definition table segment">
+        <thead>
+        <th class="four wide">方法</th>
+        <th>上下文</th>
+        <th>描述</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>onOpen</td>
+                <td>active content</td>
+                <td>展开时的回调。</td>
+            </tr>
+            <tr>
+                <td>onClose</td>
+                <td>active content</td>
+                <td>关闭时的回调。</td>
+            </tr>
+            <tr>
+                <td>onChange</td>
+                <td>active content</td>
+                <td>展开关闭时都会触发的回调。</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="ui header">
+        DOM设置
+        <div class="sub header">手风琴的DOM设置（<b>这里暂时不翻译，看原文比较好！</b>）。</div>
+    </h3>
+    <table class="ui sortable celled definition table segment">
+        <thead>
+        <th>设置</th>
+        <th class="six wide">默认值</th>
+        <th>描述</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>namespace</td>
+                <td>accordion</td>
+                <td>Event namespace. Makes sure module teardown does not effect other events attached to an element.</td>
+            </tr>
+            <tr>
+                <td>selector</td>
+                <td>
+                    <div class="code" data-type="css">
+                        {
+                        title   : '.title',
+                        content : '.content'
+                        }
+                    </div>
+                </td>
+                <td>Object containing selectors used by module.</td>
+            </tr>
+            <tr>
+                <td>className</td>
+                <td>
+                    <div class="code">
+                        className : {
+                        active : 'active'
+                        }
+                    </div>
+                </td>
+                <td>Class names used to attach style to state</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="ui header">
+        调试设置
+        <div class="sub header">手风琴的调试设置（<b>这里暂时不翻译，看原文比较好！</b>）。</div>
+    </h3>
+
+    <table class="ui sortable celled definition table segment">
+        <thead>
+        <th>Setting</th>
+        <th class="four wide">Default</th>
+        <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>name</td>
+                <td>Accordion</td>
+                <td>Name used in debug logs</td>
+            </tr>
+            <tr>
+                <td>debug</td>
+                <td>True</td>
+                <td>Provides standard debug output to console</td>
+            </tr>
+            <tr>
+                <td>performance</td>
+                <td>True</td>
+                <td>Provides standard debug output to console</td>
+            </tr>
+            <tr>
+                <td>verbose</td>
+                <td>True</td>
+                <td>Provides ancillary debug output to console</td>
+            </tr>
+            <tr>
+                <td>errors</td>
+                <td colspan="2">
+                    <div class="code">
+                        error   : {
+                        method   : 'The method you called is not defined.',
+                        notFound : 'There were no elements that matched the specified selector'
+                        }
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

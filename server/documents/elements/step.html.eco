@@ -1,0 +1,133 @@
+---
+layout      : 'default'
+css         : 'steps'
+title       : '步骤控件'
+description : '步骤显示一系列连续的活动（行为/动作）以及当前活动（行为/动作）。'
+type        : 'UI Element'
+---
+
+<%- @partial('header') %>
+
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">步骤控件的元素</a>
+            <a class="item">步骤控件组</a>
+            <a class="item">步骤控件状态</a>
+            <a class="item">变化的步骤控件</a>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">标准步骤控件</h2>
+    <div class="example">
+        <h4 class="ui header">步骤控件</h4>
+        <p>标准的步骤控件。</p>
+        <div class="ui steps">
+            <div class="ui step">
+                装货
+            </div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">步骤控件组</h2>
+    <div class="example">
+        <h4 class="ui header">步骤控件集</h4>
+        <p>一系列的步骤控件显示在一起。</p>
+        <div class="ui steps">
+            <div class="ui step">
+                装货中
+            </div>
+            <div class="ui active step">
+                付款中
+            </div>
+            <div class="ui disabled step">
+                确认订单
+            </div>
+            <div class="ui disabled step">
+                完成
+            </div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">步骤控件状态</h2>
+
+    <div class="example">
+        <h4 class="ui header">激活状态</h4>
+        <p>处于激活状态的步骤控件会被高亮显示。</p>
+        <div class="ui steps">
+            <div class="ui active step">
+                付款中
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">禁用状态</h4>
+        <p>处于禁用状态的步骤控件可以被显示但无法被操作。</p>
+        <div class="ui steps">
+            <div class="ui disabled step">
+                付款中
+            </div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">变化的步骤控件</h2>
+
+    <div class="example">
+        <h4 class="ui header">步骤控件（组）的大小（尺寸）</h4>
+        <p>步骤控件（组）可以有不同的尺寸。</p>
+
+        <div class="ui small steps">
+            <div class="ui active step">
+                装货中
+            </div>
+            <div class="ui disabled step">
+                付款中
+            </div>
+            <div class="ui disabled step">
+                确认订单
+            </div>
+            <div class="ui disabled step">
+                完成
+            </div>
+        </div>
+        <br><br>
+        <div class="ui large steps">
+            <div class="ui active step">
+                装货中
+            </div>
+            <div class="ui disabled step">
+                付款中
+            </div>
+            <div class="ui disabled step">
+                确认订单
+            </div>
+            <div class="ui disabled step">
+                完成
+            </div>
+        </div>
+    </div>
+
+
+    <div class="example">
+        <h4 class="ui header">均匀分部</h4>
+        <p>步骤控件（组）可以均匀地划分他们的父类窗口中。</p>
+        <div class="ui four steps">
+            <div class="ui active step">
+                装货中
+            </div>
+            <div class="ui disabled step">
+                付款中
+            </div>
+            <div class="ui disabled step">
+                确认订单
+            </div>
+            <div class="ui disabled step">
+                完成
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,465 @@
+---
+layout      : 'default'
+css         : 'button'
+title       : '按扭'
+description : '按扭主要是用来通过让用户点击而执行特定行为的控件。'
+type        : 'UI Element'
+---
+<script src="/javascript/button.js"></script>
+
+<%- @partial('header') %>
+
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">按扭种类</a>
+            <a class="item">按扭组</a>
+            <a class="item">按扭状态</a>
+            <a class="item">变化的按扭控件</a>
+        </div>
+    </div>
+    <h2 class="ui dividing header">按扭种类</h2>
+
+    <div class="follow example">
+        <h4 class="ui header">按扭</h4>
+        <p>标准按扭控件。</p>
+        <div class="ui button">
+            关注爱酷学习网
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">按扭动画</h4>
+        <p>按扭控件也是可以有动画效果的哦，是不是很Cool！</p>
+        <div class="ui ignored message">该按钮将根据可视内容的大小自动调整大小。需要注意的是你需要确保有足够的区域来显示该按扭。</div>
+        <div class="ui animated button">
+            <div class="visible content">下一个</div>
+            <div class="hidden content">
+                <i class="right arrow icon"></i>
+            </div>
+        </div>
+        <div class="ui vertical animated button">
+            <div class="hidden content">商店</div>
+            <div class="visible content">
+                <i class="cart icon"></i>
+            </div>
+        </div>
+        <div class="ui animated fade button">
+            <div class="visible content">注册成为会员</div>
+            <div class="hidden content">
+                12元/月
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="example">
+        <h4 class="ui header">带有图标的按扭</h4>
+        <p>按扭控件可以在按扭内嵌入一个图标来增加按扭的表示形式。</p>
+        <div class="ui icon button">
+            <i class="cloud icon"></i>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">标签化的按扭</h4>
+        <p>按扭控件可以有图片和标签。</p>
+        <div class="ui labeled icon button">
+            <i class="pause icon"></i>
+            暂停
+        </div>
+        <div class="ui right labeled icon button">
+            <i class="right arrow icon"></i>
+            下一曲
+        </div>
+    </div>
+    <h2 class="ui dividing header">按扭组</h2>
+
+    <div class="example">
+        <h4 class="ui header">按扭组</h4>
+        <p>多个按扭可以按组显示在一起。</p>
+        <div class="ui buttons">
+            <div class="ui button">一</div>
+            <div class="ui button">二</div>
+            <div class="ui button">三</div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">图标按扭组</h4>
+        <p>按扭组可以按分组显示一系列图标按扭。</p>
+        <div class="ui icon buttons">
+            <div class="ui button"><i class="align left icon"></i></div>
+            <div class="ui button"><i class="align center icon"></i></div>
+            <div class="ui button"><i class="align right icon"></i></div>
+            <div class="ui button"><i class="align justify icon"></i></div>
+        </div>
+        <div class="ui icon buttons">
+            <div class="ui button"><i class="bold icon"></i></div>
+            <div class="ui button"><i class="underline icon"></i></div>
+            <div class="ui button"><i class="text width icon"></i></div>
+        </div>
+    </div>
+
+
+    <div class="example">
+        <h4 class="ui header">条件按扭</h4>
+        <p>按扭组可以按条件（比如注册/登录）分隔开来不同的按扭。</p>
+        <div class="ui buttons">
+            <div class="ui button">取消</div>
+            <div class="or"></div>
+            <div class="ui positive button">保存</div>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">按扭状态</h2>
+
+    <div class="example">
+        <h4 class="ui header">鼠标悬停</h4>
+        <p>当用户将鼠标悬停在按扭上时按扭可以改变显示界面。</p>
+        <div class="ui hover button">
+            关注爱酷学习网
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">Down</h4>
+        <p>A button can change when pressed using touch or mouse events</p>
+        <div class="ui down button">
+            <i class="user icon"></i>
+            关注爱酷学习网
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">激活状态</h4>
+        <p>按扭可以被设置成激活状态（相对于禁用状态，这不是废话吗？按扭不激活怎么让用户点击^_^）</p>
+        <div class="ui active button">
+            <i class="user icon"></i>
+            关注爱酷学习网
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">禁用状态</h4>
+        <p>按扭可以被禁用，被禁用的按扭用户点击将不会触发事件。</p>
+        <div class="ui disabled button">
+            <i class="user icon"></i>
+            已关注了爱酷学习网
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">加载状态</h4>
+        <p>按扭可以在必要的时候显示一个加载控件。</p>
+        <div class="ui loading button">加载按扭</div>
+    </div>
+
+    <h2 class="ui dividing header">变化的按扭</h2>
+
+
+    <div class="example">
+        <h4 class="ui header">社会化</h4>
+        <p>按扭可以被设置成社会化网站的链接样式（比如显示一个按扭，当用户单击这个按扭的时候就会跳转到Fackbook或者Twitter或者新浪微博等网站）。</p>
+        <div class="ui facebook button">
+            <i class="facebook icon"></i>
+            Facebook
+        </div>
+        <div class="ui twitter button">
+            <i class="twitter icon"></i>
+            Twitter
+        </div>
+        <div class="ui google plus button">
+            <i class="google plus icon"></i>
+            Google Plus
+        </div>
+        <div class="ui linkedin button">
+            <i class="linkedin icon"></i>
+            LinkedIn
+        </div>
+        <div class="ui instagram button">
+            <i class="instagram icon"></i>
+            Instagram
+        </div>
+        <div class="ui youtube button">
+            <i class="youtube icon"></i>
+            YouTube
+        </div>
+    </div>
+
+
+    <div class="example">
+        <h4 class="ui header">按扭大小</h4>
+        <p>按扭有以下几种尺寸：</p>
+        <div class="mini ui button">
+            迷你型按扭
+        </div>
+        <div class="tiny ui button">
+            超小型按扭
+        </div>
+        <div class="small ui button">
+            小型按扭
+        </div>
+        <div class="medium ui button">
+            普通按扭
+        </div>
+        <div class="large ui button">
+            大型按扭
+        </div>
+        <div class="big ui button">
+            超大型按扭
+        </div>
+        <div class="huge ui button">
+            巨大型按扭
+        </div>
+        <div class="massive ui button">
+            最大型按扭
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">按扭的秩序（顺序/重要程度等）</h4>
+        <p>按扭可以显示不同程度强调的样式。</p>
+        <div class="ui primary button">
+            添加到购物车
+        </div>
+        <div class="ui secondary button">
+            保存
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">基础按扭</h4>
+        <p>最基础样式的按扭，不用多说吧，基本上很少用这类按扭。</p>
+        <div class="ui basic button">
+            <i class="icon user"></i>
+            添加用户
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui inverted segment">
+            <div class="ui inverted basic button">
+                <i class="icon globe"></i>
+                切换语言
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">按扭颜色</h4>
+        <p>按扭可以有不同的颜色：</p>
+        <a class="ui black button">黑色按扭</a>
+        <a class="ui green button">绿色按扭</a>
+        <a class="ui red button">红色按扭</a>
+        <a class="ui blue button">蓝色按扭</a>
+    </div>
+    <div class="another example">
+        <a class="ui purple button">紫色按扭</a>
+        <a class="ui teal button">水鸭色按扭（这是什么颜色？）</a>
+        <a class="ui orange button">橙色按扭</a>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">开关按钮</h4>
+        <p>按扭可以被显示成开关状态样式。</p>
+        <div class="ui toggle button">
+            投票
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">按扭反馈</h4>
+        <p>按扭可以被设置成积极的/消极的（类似于提示用户点击哪个按扭好一些，如网站注册时的注册声明，积极的按扭是“同意”，消极的按扭是“不同意”）：</p>
+        <div class="positive ui button">同意</div>
+        <div class="negative ui button">不同意</div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">流式按扭</h4>
+        <p>流式按扭可以使用全部的父控件内容宽度：</p>
+        <div class="fluid ui button">填充容器所有空间</div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">圆形按扭</h4>
+        <p>按扭可以显示成圆形关：</p>
+        <div class="circular ui button">圆形按扭</div>
+        <div class="circular ui icon button">
+            <i class="icon settings"></i></div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">垂直排放</h4>
+        <p>多个按扭可以被垂直摆放在网页中：</p>
+        <div class="ui top attached button">上面的按扭</div>
+        <div class="ui attached segment"></div>
+        <div class="bottom attached ui button">下面的按扭</div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">水平排放</h4>
+        <p>多个按扭可以被水平的旋转在网页中：</p>
+        <div class="ui left attached button">左边</div>
+        <div class="right attached ui button">右边</div>
+    </div>
+
+
+    <h3 class="ui dividing header">按扭组</h3>
+
+    <div class="example">
+        <h4 class="ui header">垂直按扭组</h4>
+        <p>垂直放置的按扭组。</p>
+        <div class="ui vertical buttons">
+            <div class="ui button">上</div>
+            <div class="ui button">中</div>
+            <div class="ui button">下</div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">图标按扭组</h4>
+        <p>按扭组可以显示一系统的图标按扭。</p>
+        <div class="ui icon buttons">
+            <div class="ui button">
+                <i class="pause icon"></i>
+            </div>
+            <div class="ui button">
+                <i class="play icon"></i>
+            </div>
+            <div class="ui button">
+                <i class="shuffle icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">标签化图标按扭</h4>
+        <p>按扭组可以带有标签和图标。</p>
+        <div class="ui vertical labeled icon buttons">
+            <div class="ui button">
+                <i class="pause icon"></i>
+                暂停
+            </div>
+            <div class="ui button">
+                <i class="play icon"></i>
+                播放
+            </div>
+            <div class="ui button">
+                <i class="shuffle icon"></i>
+                拖曳
+            </div>
+        </div>
+    </div>
+
+
+    <div class="example">
+        <h4 class="ui header">流式按扭组</h4>
+        <p>和流式按扭一样，只不过现在是按扭而已。</p>
+        <div class="ui message">可以使用2或者"two"来指明每个按扭占用的宽度。</div>
+        <div class="3 fluid ui buttons">
+            <div class="ui button">一</div>
+            <div class="ui button">二</div>
+            <div class="ui button">三</div>
+        </div>
+        <div class="ui ignored divider"></div>
+        <div class="five fluid ui buttons">
+            <div class="ui button">一</div>
+            <div class="ui button">二</div>
+            <div class="ui button">三</div>
+            <div class="ui button">四</div>
+            <div class="ui button">五</div>
+        </div>
+        <div class="ui ignored divider"></div>
+        <div class="12 fluid ui icon buttons">
+            <div class="ui button"><i class="tag icon"></i></div>
+            <div class="ui button"><i class="tags icon"></i></div>
+            <div class="ui button"><i class="tasks icon"></i></div>
+            <div class="ui button"><i class="terminal icon"></i></div>
+            <div class="ui button"><i class="text file icon"></i></div>
+            <div class="ui button"><i class="text file outline icon"></i></div>
+            <div class="ui button"><i class="time icon"></i></div>
+            <div class="ui button"><i class="trash icon"></i></div>
+            <div class="ui button"><i class="url icon"></i></div>
+            <div class="ui button"><i class="user icon"></i></div>
+            <div class="ui button"><i class="users icon"></i></div>
+            <div class="ui button"><i class="video icon"></i></div>
+        </div>
+    </div>
+
+
+    <div class="example">
+        <h4 class="ui header">按扭组颜色</h4>
+        <p>和按扭一样，按扭组也可以有不可的颜色。</p>
+        <div class="blue ui buttons">
+            <div class="ui button">一</div>
+            <div class="ui button">二</div>
+            <div class="ui button">三</div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">基本的按扭组</h4>
+        <p>最基本的按扭组，没有其余的任何修饰。</p>
+        <div class="ui basic buttons">
+            <div class="ui button">一</div>
+            <div class="ui button">二</div>
+            <div class="ui button">三</div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">按扭组尺寸</h4>
+        <p>按扭组也可以有不同的尺寸哦（这又是句废话）。</p>
+        <div class="huge ui buttons">
+            <div class="ui button">一</div>
+            <div class="ui button">二</div>
+            <div class="ui button">三</div>
+        </div>
+        <div class="large ui buttons">
+            <div class="ui button">一</div>
+            <div class="ui button">二</div>
+            <div class="ui button">三</div>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="small icon ui buttons">
+            <div class="ui button"><i class="align left icon"></i></div>
+            <div class="ui button"><i class="align center icon"></i></div>
+            <div class="ui button"><i class="align right icon"></i></div>
+            <div class="ui button"><i class="align justify icon"></i></div>
+        </div>
+        <div class="tiny icon ui buttons">
+            <div class="ui button"><i class="align left icon"></i></div>
+            <div class="ui button"><i class="align center icon"></i></div>
+            <div class="ui button"><i class="align right icon"></i></div>
+            <div class="ui button"><i class="align justify icon"></i></div>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui huge buttons">
+            <div class="ui button">一</div>
+            <div class="or"></div>
+            <div class="ui button">二</div>
+        </div>
+        <div class="ui large buttons">
+            <div class="ui button">一</div>
+            <div class="or"></div>
+            <div class="ui button">二</div>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui small buttons">
+            <div class="ui button">一</div>
+            <div class="or"></div>
+            <div class="ui button">二</div>
+        </div>
+        <div class="ui tiny buttons">
+            <div class="ui button">一</div>
+            <div class="or"></div>
+            <div class="ui button">二</div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,134 @@
+---
+layout      : 'default'
+css         : 'loader'
+title       : '加载控件'
+description : '加载控件主要是显示一个正在加载的动画，让用户知道需要等待该动作结束才可以做其它操作。'
+type        : 'UI Element'
+---
+
+<%- @partial('header') %>
+
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">加载控件的种类</a>
+            <a class="item">加载控件的状态</a>
+            <a class="item">变化的加载控件</a>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">加载控件的种类</h2>
+    <div class="example">
+        <h4 class="ui header">加载控件</h4>
+        <p>基本加载控件</p>
+        <div class="ui ignored info message">加载控件默认情况下是隐藏的。</div>
+        <div class="ui segment">
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+            <div class="ui active dimmer">
+                <div class="ui loader"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">文字加载控件</h4>
+        <p>加载控件是可以包含文字的哦！</p>
+        <div class="ui segment">
+            <div class="ui active dimmer">
+                <div class="ui text loader">正在加载中...</div>
+            </div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui segment">
+            <div class="ui active inverted dimmer">
+                <div class="ui text loader">正在加载中...</div>
+            </div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+    </div>
+
+
+    <h2 class="ui dividing header">加载控件状态</h2>
+
+    <div class="example">
+        <h4 class="ui header">激活（显示）状态</h4>
+        <p>加载控件可以有两种状态：激活（显示）/禁用（隐藏）</p>
+        <div class="ui segment">
+            <div class="ui active loader"></div>
+            爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">禁用（隐藏）状态</h4>
+        <p>加载控件可以被禁用。</p>
+        <div class="ui segment">
+            <div class="ui disabled loader"></div>
+            爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。
+        </div>
+    </div>
+
+
+    <h2 class="ui dividing header">变化的加载控件</h2>
+
+    <div class="example">
+        <h4 class="ui header">内联</h4>
+        <p>加载控件可以被嵌入在内容中。</p>
+        <div class="ui active inline loader"></div>
+    </div>
+    <div class="example">
+        <h4 class="ui header">加载控件尺寸（大小）</h4>
+        <p>加载控件有不同的尺寸。</p>
+
+        <div class="ui segment">
+            <div class="ui active dimmer"><div class="ui mini text loader">Loading</div></div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+        <div class="ui segment">
+            <div class="ui active dimmer"><div class="ui small text loader">Loading</div></div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+        <div class="ui segment">
+            <div class="ui active dimmer"><div class="ui medium text loader">Loading</div></div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+        <div class="ui segment">
+            <div class="ui active dimmer"><div class="ui large text loader">Loading</div></div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">反色</h4>
+        <p>又是反色控件，不多说了。</p>
+        <div class="ui ignored info message">加载控件如果包含在<code>dimmer</code>中，会自动反色的哦。</div>
+        <div class="ui segment">
+            <div class="ui active dimmer"><div class="ui mini inverted text loader">Loading</div></div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+        <div class="ui segment">
+            <div class="ui active dimmer"><div class="ui small inverted text loader">Loading</div></div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+        <div class="ui segment">
+            <div class="ui active dimmer"><div class="ui medium inverted text loader">Loading</div></div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+        <div class="ui segment">
+            <div class="ui active dimmer"><div class="ui large inverted text loader">Loading</div></div>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>

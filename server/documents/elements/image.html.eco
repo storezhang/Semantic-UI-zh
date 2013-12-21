@@ -1,0 +1,122 @@
+---
+layout      : 'default'
+css         : 'image'
+title       : '图像控件'
+description : '图像控件用于显示一个图像（图片），并加上其它美化效果。'
+type        : 'UI Element'
+---
+
+<%- @partial('header') %>
+
+<div class="main container">
+
+    <div class="peek">
+        <div class="ui vertical pointing secondary menu">
+            <a class="active item">图像控件种类</a>
+            <a class="item">图像控件状态</a>
+            <a class="item">变化的图像控件</a>
+            <a class="item">图像控件组</a>
+        </div>
+    </div>
+
+    <h2 class="ui dividing header">图像控件种类</h2>
+    <div class="example">
+        <h4 class="ui header">图像</h4>
+        <p>显示一张图片。</p>
+        <div class="ui ignored info message">默认情况下，图像控件占用和原始图片同样的大小。如果指定图像控件的大小，图片将会被拉伸。</div>
+        <img class="ui medium image" src="/images/demo/photo.jpg">
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">图像链接</h4>
+        <p>使用图片做的链接。</p>
+        <a href="http://www.icoolxue.com" class="ui medium image">
+            <img src="/images/demo/photo.jpg">
+        </a>
+    </div>
+
+    <h2 class="ui dividing header">
+        图像控件状态
+    </h2>
+
+    <div class="example">
+        <h4 class="ui header">禁用</h4>
+        <p>处于禁用状态的图像控件可以被显示，但是不能被选择。</p>
+        <img class="medium disabled ui image" src="/images/demo/photo.jpg">
+    </div>
+
+    <h2 class="ui dividing header">变化的图像控件</h2>
+
+    <div class="example">
+        <h4 class="ui header">头像图像控件</h4>
+        <p>图像控件可以被内联的显示成一个头像的样式。</p>
+        <img class="ui avatar image" src="/images/demo/photo2.jpg"> 狗狗
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">圆形图像控件</h4>
+        <p>图像被显示成圆形的形状。</p>
+        <img class="rounded ui image" src="/images/demo/photo2.jpg">
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">圆角图像控件</h4>
+        <p>图像控件的四角被修饰成圆角形状。</p>
+        <img class="circular ui image" src="/images/demo/photo2.jpg">
+    </div>
+
+    <div class="example">
+        <h4 class="ui header">浮动的图像控件</h4>
+        <p>图像控件可以被显示在内容的左边或者右边。</p>
+        <div class="ui segment">
+            <img class="ui small left floated image" src="/images/demo/photo.jpg">
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+            <img class="ui small right floated image" src="/images/demo/photo.jpg">
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+
+            <p>爱酷学习网是一个免费提供高清在线观看视频教程的网站，这里有各类视频教程，包括Java,.Net,C,C++,Python,Php,iOS,Ruby,Photoshop,Mybats,Spring,SpringMVC,Bootstrap,Semantic UI等视频教程。我们还提供了Android, iOS, Windows Phone客户端，让你在手机等移动设备上也能随时随地观看视频教程。</p>
+        </div>
+    </div>
+
+    <div class="clearing example">
+        <h4 class="ui header">图像控件大小（尺寸）</h4>
+        <p>图像控件可以有不同的尺寸（大小）：</p>
+        <img class="ui tiny image" src="/images/demo/photo2.jpg">
+
+        <div class="ui simple ignored divider"></div>
+        <img class="ui mini image" src="/images/demo/photo2.jpg">
+
+        <div class="ui simple ignored divider"></div>
+        <img class="ui small image" src="/images/demo/photo2.jpg">
+
+        <div class="ui simple ignored divider"></div>
+        <img class="ui large image" src="/images/demo/photo.jpg">
+
+        <div class="ui simple ignored divider"></div>
+        <img class="ui huge image" src="/images/demo/photo.jpg">
+    </div>
+
+
+
+    <h2 class="ui dividing header">图像控件组</h2>
+
+    <div class="example">
+        <h4 class="ui header">图像控件组大小（尺寸）</h4>
+        <p>图像控件组也有不同的尺寸（大小）：</p>
+        <div class="ui small images">
+            <img class="ui image" src="/images/demo/photo.jpg">
+            <img class="ui image" src="/images/demo/photo.jpg">
+            <img class="ui image" src="/images/demo/photo.jpg">
+            <img class="ui image" src="/images/demo/photo.jpg">
+        </div>
+    </div>
+    <div class="another example">
+        <div class="ui medium images">
+            <img src="/images/demo/photo.jpg">
+            <img src="/images/demo/photo.jpg">
+            <img src="/images/demo/photo.jpg">
+            <img src="/images/demo/photo.jpg">
+        </div>
+    </div>
+
+</div>
